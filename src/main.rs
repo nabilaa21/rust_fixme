@@ -31,13 +31,13 @@ struct Color {
 
 fn main() {
     for city in [
-        City { name: "Glassboro", lat: 39.702892, lon: -75.111839 },
-        City { name: "Mullica Hill", lat: 39.73928, lon: -75.224072 },
-        City { name: "Swedesboro", lat: 39.747616, lon: -75.310463 },
+        City { name: "Glassboro", lat: 39.703 N, lon: 75.112 W},
+        City { name: "Mullica Hill", lat: 39.739 N, lon: 75.224 W },
+        City { name: "Swedesboro", lat: 39.748 N, lon: 75.310 W },
     ].iter() {
         println!("{}", *city);
     }
-
+  /// I changed the negitives into positives and changed N to W
     for color in [
         Color { red: 128, green: 255, blue: 90 },
         Color { red: 0, green: 3, blue: 254 },
@@ -45,5 +45,5 @@ fn main() {
     ].iter() {
         // Hint : Fix the code so you can print it using {}
         println!("{:?}", *color);
-    }
+  
 }
